@@ -10,30 +10,71 @@
 
 <body>
 
-    <p>
-        This is my Body !
+    <p class="odd">
+        This is my Body 1 !
+    </p>
+    <p id="second">
+        This is my Body 2 !
+    </p>
+    <p class="odd">
+        This is my Body 3 !
+    </p>
+    <p id="four">
+        This is my Body 4 !
+    </p>
+    <p class="odd">
+        This is my Body 5 !
     </p>
 
 
     <script src="js/jquery-3.7.1.min.js"></script>
-    
+
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
 
     <script>
-        console.log("We are using JQuery !");
 
-        // $('selector').action()
+        $(document).ready(function () {
+            //   JQuery code !
 
-           $('p').click()
+            console.log("We are using JQuery !");
 
-           $('p').click(function(){
+            //    $('selector').action()
 
-            console.log("You clicked on p !");
-            
-            $('p').hide();
+            //    $('p').click()
+
+            $('p').click(function () {
+
+                console.log("You clicked on p !", this);
+
+                //         $(this).hide();
+
+                //         $('#id').hide();
+
+                //         $('.class').hide();
+
+            });
+
+        });
 
 
-           })
+        // There are 3 types of selectors in JQuery.
+
+        // 1.  #id Selector.
+
+        // $('#second').click();
+
+
+        // 2.  .class Selector.
+
+        // $('.odd').click();
+
+
+        // 3.  element Selector.
+
+        // $('p').click(function () {
+
+            // console.log("You clicked on p !");
+
 
     </script>
 
