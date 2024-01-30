@@ -4,95 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>JQuery - 1 !</title>
 </head>
 
 <body>
-
-    <p class="odd">
-        This is my Body 1 !
-    </p>
-    <p id="second">
-        This is my Body 2 !
-    </p>
-    <p class="odd">
-        This is my Body 3 !
-    </p>
-    <p id="four">
-        This is my Body 4 !
-    </p>
-    <p class="odd">
-        This is my Body 5 !
-    </p>
-
+    
+    <p class="odd">This is my Body 1 !</p>
+    <p id="second">This is my Body 2 !</p>
+    <p class="odd">This is my Body 3 !</p>
+    <p id="four">This is my Body 4 !</p>
+    <p class="odd">This is my Body 5 !</p>
+    <p id="six">This is my Body 6 !</p>
 
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="myJQuery.js"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-
-    <script>
-
-        $(document).ready(function () {
-            //   JQuery code !
-
-            console.log("We are using JQuery !");
-
-            //    $('selector').action()
-
-            //    $('p').click()
-
-            $('p').click(function () {
-
-                console.log('You clicked on p !', this);
-
-            });
-
-                //  $(this).hide();
-
-                //  $('#id').hide();
-
-                //  $('.class').hide();
-
-
-                // Other Selectors !
-
-
-                $('*').click();
-
-                $('p.odd').click();
-
-                $('p:first').click();
-
-                
-
-        });
-
-
-        // There are 3 types of selectors in JQuery.
-
-        // 1.  #id Selector.
-
-        // $('#second').click();
-
-
-        // 2.  .class Selector.
-
-        // $('.odd').click();
-
-
-        // 3.  element Selector.
-
-        // $('p').click(function () {
-
-        // console.log("You clicked on p !");
-
-
-
-
-
-
-    </script>
 
 </body>
 
