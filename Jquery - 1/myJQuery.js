@@ -36,17 +36,17 @@ $(document).ready(function() {
     
     // DEMO on Method !
 
-    $('p').on(
-        {
-            click: function() {
-                 console.log("Thanks for clicking !", this);
+//     $('p').on(
+//         {
+//             click: function() {
+//                  console.log("Thanks for clicking !", this);
                  
-        },
-            mouseleave: function() {
-                 console.log("Mouseleave");
+//         },
+//             mouseleave: function() {
+//                  console.log("Mouseleave");
         
-    }
-})
+//     }
+// })
 
 
 // $('#wiki').hide(1000, function () {
@@ -62,11 +62,71 @@ $(document).ready(function() {
        
 //    })
 
+
+// FADE FEATURES.
     $('#Toggle').click(function(){
         $('#wiki').fadeOut(2000); 
     })
 
+
+
+// SLIDE FEATURES: Speed and callback parameters are optional.
+
+    // $('#wiki').slideUp(5000, function() {
+    //     console.log("Done !");
+        
+    // })
+    // $('#wiki').slideDown(5000)
+    // $('#wiki').slideToggle(5000)
+
+
+
+    // ANIMATION FUNCTIONS IN JQUERY.
+
+
+    //   $('#wiki').animate({
+    //     opacity: 0.3,
+    //     height: '150px',
+    //     width: '300px'
+
+    //    }, 2000)
+
+
+    $('#wiki').animate({opacity: 0.3}, 4000);
+    $('#wiki').animate({opacity: 0.9}, 1000);
+    $('#wiki').animate({width: '300px'}, 12000);
+
+    // $('#wiki').stop()
+
+
+
+    // HTML manipulation with JQuery.
+
+    // $('#wiki').text("This is me !")
     
+    $('body').html()
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
 
 
 
