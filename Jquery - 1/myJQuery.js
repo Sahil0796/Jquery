@@ -18,14 +18,61 @@ $(document).ready(function() {
     // });
 
 
-    $('#six').dblclick(function() {
+    // $('p').dblclick(function() {
 
-        console.log("You double clicked on p 6 !", this);
+    //     console.log("You double clicked on p 6 !", this);
 
-    });
+    // });
+    
+    // $('p').hover(function() {
+
+    //     console.log("You hover:  !", this);
+    // },
+    // function(){
+    //     console.log("Thanks for Watching !");
+        
+    // });
+
+    
+    // DEMO on Method !
+
+    $('p').on(
+        {
+            click: function() {
+                 console.log("Thanks for clicking !", this);
+                 
+        },
+            mouseleave: function() {
+                 console.log("Mouseleave");
+        
+    }
+})
+
+
+// $('#wiki').hide(1000, function () {
+//     console.log("hidden");  
+// })
+
+// $('#wiki').show(2000, function () {
+//     console.log("Visible");  
+// })
+
+//    $('#Toggle').click (function() {
+//     $('#wiki').toggle(2000);
+       
+//    })
+
+    $('#Toggle').click(function(){
+        $('#wiki').fadeOut(2000); 
+    })
+
     
 
-});
+
+
+   });
+
+
         //  $(this).hide();
 
         //  $('#id').hide();
