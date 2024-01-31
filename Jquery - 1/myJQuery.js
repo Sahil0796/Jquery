@@ -3,7 +3,7 @@ $(document).ready(function() {
     
     //   JQuery code !
 
-    console.log("I am in a new file now !");
+    // console.log("I am in a new file now !");
 
     console.log("We are using JQuery !");
 
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
     $('#wiki').animate({opacity: 0.3}, 4000);
     $('#wiki').animate({opacity: 0.9}, 1000);
-    $('#wiki').animate({width: '300px'}, 12000);
+    $('#wiki').animate({width: '300px'}, 5000);
 
     // $('#wiki').stop()
 
@@ -104,9 +104,53 @@ $(document).ready(function() {
 
     // $('#wiki').text("This is me !")
     
-    $('body').html()
+    // $('body').html("This is JQuery !")
+
+    // $('#ta').val("Text Area !")
+    
+    $('#ta').empty()
+    
+    $('#wiki').addClass('wikiclass')
+
+
+    // CSS FEATURES IN JQUERY.
+
+    $('#wiki').css('background-color', 'green')
+
+    $('#wiki').css('background-color')
+
+
+
+    // AJAX USING JQUERY !
+    // AJAX IS AN ART OF EXCHANGING DATA WITH THE SERVER WITHOUT RELOADING THE PAGE.
+
+    // GET METHOD IN AJAX.
+
+
+    $.get('https://code.jquery.com/jquery-3.7.1.js', function(data, status){
+    alert(data);
+    });
+    
+    
+    $.post('https://code.jquery.com/jquery-3.7.1.js', 
+    {name: "Sahil",
+     channel: "TrophyMaster7"}, function(data, status){
+    alert(status);
+    });
+    
+
+
+
+
+
 
     
+
+
+
+
+
+
 
 
 
